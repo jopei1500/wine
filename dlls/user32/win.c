@@ -2886,6 +2886,13 @@ INT WINAPI GetWindowTextA( HWND hwnd, LPSTR lpString, INT nMaxCount )
     HeapFree( GetProcessHeap(), 0, buffer );
     return strlen(lpString);
 }
+/******************************************************************
+ *		InternalGetWindowIcon (USER32.@)
+ */
+INT WINAPI InternalGetWindowIcon(HWND hwnd, UINT iconType )
+{
+    return NULL;
+}
 
 
 /*******************************************************************
